@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Review Blog</title>
+    <link rel="icon" href="../../img/book.png">
+    <!-- Подключаем стили Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключаем скрипты Bootstrap JavaScript, включая Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/mainPage.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Phudu:wght@700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+            <div class="header_inner">
+                <!-- Заголовок сайта -->
+                <a class="navbar-brand mx-4" href="../mainPage.html">
+                    <h2 class="header_inner_title">Book Review Blog</h2>
+                </a>
+                <!-- Кнопка для мобильных устройств -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+                    <!-- Навигационное меню -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#author">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contents">Contents</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown link
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../mainPage.html">Main page</a></li>
+                        <li><a class="dropdown-item" href="../listOfBooks.html">Book reviews</a></li>
+                        <li><a class="dropdown-item" href="../aboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <!-- Главный контейнер -->
+    <div class="container mt-5">
+        <!-- Секция "Обзор" -->
+        <section id="overview">
+            <h1 class="display-4">Introduction to the Theory of Computation</h1>
+            <p class="lead">"Introduction to the Theory of Computation" by Michael Sipser is a comprehensive textbook that
+                explores the mathematical foundations of computer science and the theory of computation.
+
+                This book covers a wide range of topics, including automata theory, formal languages, computability theory, and
+                complexity theory. It provides a deep understanding of the theoretical aspects of computation and serves as a
+                valuable resource for computer science students and researchers.
+
+                Whether you're studying the theory of computation for academic purposes or want to gain insights into the
+                mathematical underpinnings of computer science, this book is an excellent choice.</p>
+        </section>
+
+        <!-- Секция "Автор" -->
+        <section id="author" class="mt-5">
+            <h1 class="display-4">About the Author</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Добавление ссылки на изображение автора -->
+                    <a href="https://en.wikipedia.org/wiki/Michael_Sipser" target="_blank">
+                        <img src="../../img/Michael.jpg" alt="Michael Sipser" class="img-fluid rounded square">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <p class="lead">Michael Sipser is a renowned computer scientist and educator known for his work in the
+                        field of theoretical computer science. He has made significant contributions to automata theory and
+                        the theory of computation.</p>
+                    <p>As an author, Michael Sipser has provided students and researchers with accessible and comprehensive
+                        resources for studying the theoretical foundations of computer science.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Содержание" -->
+        <section id="contents" class="mt-5">
+            <h1 class="display-4">Table of Contents</h1>
+            <ol>
+                <li>Regular Languages</li>
+                <li>Context-Free Languages</li>
+                <li>Context-Free Grammars</li>
+                <li>Turing Machines</li>
+                <li>Decidability</li>
+                <li>Reducibility</li>
+                <li>Time Complexity</li>
+                <li>Complexity Classes</li>
+                <li>Space Complexity</li>
+                <li>Intractability</li>
+                <li>Advanced Topics</li>
+            </ol>
+            <p>The book provides rigorous explanations, examples, and exercises to help readers master the theoretical
+                concepts of computer science. It's an essential reference for anyone interested in the theory of computation.</p>
+        </section>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

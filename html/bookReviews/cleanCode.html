@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Book Review Blog</title>
+	<link rel="icon" href="../../img/book.png">
+	<!-- Подключаем стили Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Подключаем скрипты Bootstrap JavaScript, включая Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../css/mainPage.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Phudu:wght@700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+</head>
+
+<header class="header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+			<div class="header_inner">
+				<!-- Заголовок сайта -->
+				<a class="navbar-brand mx-4" href="../mainPage.html">
+					<h2 class="header_inner_title">Book Review Blog</h2>
+				</a>
+				<!-- Кнопка для мобильных устройств -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse ml-auto" id="navbarNav">
+					<!-- Навигационное меню -->
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#overview">Overview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#author">Author</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contents">Contents</a>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Dropdown link
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="../mainPage.html">Main page</a></li>
+						<li><a class="dropdown-item" href="../listOfBooks.html">Book reviews</a></li>
+						<li><a class="dropdown-item" href="../aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<!-- Главный контейнер -->
+	<div class="container mt-5">
+		<!-- Секция "Обзор" -->
+		<section id="overview">
+			<h1 class="display-4">Clean Code: A Handbook of Agile Software Craftsmanship</h1>
+			<p class="lead">"Clean Code" by Robert C. Martin is a guide to writing clean, maintainable, and efficient
+				software code.
+
+				This book focuses on best practices and principles for writing code that is easy to understand, modify, and
+				extend. It covers topics like code formatting, naming conventions, code organization, and refactoring
+				techniques.
+
+				Whether you're a beginner or an experienced developer, this book provides valuable insights into improving your
+				coding skills and creating high-quality software.</p>
+		</section>
+
+		<!-- Секция "Автор" -->
+		<section id="author" class="mt-5">
+			<h1 class="display-4">About the Author</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<!-- Добавление ссылки на изображение автора -->
+					<a href="https://en.wikipedia.org/wiki/Robert_C._Martin" target="_blank">
+						<img src="../../img/Robert.png" alt="Robert C. Martin" class="img-fluid rounded square">
+					</a>
+				</div>
+				<div class="col-md-8">
+					<p class="lead">Robert C. Martin, also known as "Uncle Bob," is a software engineer and author with
+						extensive experience in the software industry. He is a proponent of clean code and has played a
+						significant role in promoting software craftsmanship.</p>
+					<p>Through his books, articles, and talks, Robert C. Martin has influenced countless developers and
+						organizations to write better code and improve software quality.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Секция "Содержание" -->
+		<section id="contents" class="mt-5">
+			<h1 class="display-4">Table of Contents</h1>
+			<ol>
+				<li>Introduction</li>
+				<li>Meaningful Names</li>
+				<li>Functions</li>
+				<li>Comments</li>
+				<li>Formatting</li>
+				<li>Objects and Data Structures</li>
+				<li>Error Handling</li>
+				<li>Boundaries</li>
+				<li>Unit Tests</li>
+				<li>Classes</li>
+				<li>Systems</li>
+				<li>Emergence</li>
+				<li>Concurrency</li>
+				<li>Successive Refinement</li>
+				<li>JUnit Internals</li>
+				<li>Refactoring SerialDate</li>
+				<li>Smells and Heuristics</li>
+				<li>Appendices</li>
+			</ol>
+			<p>The book provides practical advice, real-world examples, and exercises to help developers improve their coding
+				skills and create clean, maintainable code. It's a must-read for anyone striving to become a better
+				programmer.</p>
+		</section>
+	</div>
+
+	<!-- Подключение скриптов Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

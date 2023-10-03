@@ -1,0 +1,131 @@
+/* Общие стили для текста */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    line-height: 1.6;
+}
+html {
+	scroll-behavior: smooth;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для навигационного меню */
+.navbar {
+    background-color: #007BFF;
+    border-bottom: 4px solid #0056b3;
+}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для списка содержания */
+ol {
+    list-style: decimal inside;
+    padding-left: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Стили для ссылок */
+a {
+    font-family: 'Arial', sans-serif;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Стили для изображения автора */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #007BFF;
+    border-radius: 50%;
+}
+
+/* Стили для информации */
+.info-text {
+    font-size: 16px;
+    color: #333; /* Цвет текста для лучшей читаемости */
+    margin-bottom: 20px;
+}
+
+/* Дополнительные стили для улучшения дизайна */
+/* Пример: Плавное изменение цвета при наведении на ссылки */
+a:hover {
+    color: #FF5733; /* Новый цвет при наведении */
+}
+
+/* Пример: Добавление фонового изображения для секции */
+section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Дополнительные стили по вашему выбору */
+}
+
+/* Пример: Добавление анимации при загрузке страницы */
+.container {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

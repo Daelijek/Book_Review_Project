@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Review Blog</title>
+    <link rel="icon" href="../../img/book.png">
+    <!-- Подключаем стили Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключаем скрипты Bootstrap JavaScript, включая Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/mainPage.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Phudu:wght@700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+            <div class="header_inner">
+                <!-- Заголовок сайта -->
+                <a class="navbar-brand mx-4" href="../mainPage.html">
+                    <h2 class="header_inner_title">Book Review Blog</h2>
+                </a>
+                <!-- Кнопка для мобильных устройств -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+                    <!-- Навигационное меню -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#author">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contents">Contents</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown link
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../mainPage.html">Main page</a></li>
+                        <li><a class="dropdown-item" href="../listOfBooks.html">Book reviews</a></li>
+                        <li><a class="dropdown-item" href="../aboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <!-- Главный контейнер -->
+    <div class="container mt-5">
+        <!-- Секция "Обзор" -->
+        <section id="overview">
+            <h1 class="display-4">To Kill a Mockingbird</h1>
+            <p class="lead">"To Kill a Mockingbird" by Harper Lee is a classic American novel that addresses issues of
+                race, class, and morality in the Deep South during the 1930s. The story is narrated by Scout Finch, a
+                young girl growing up in the racially segregated town of Maycomb, Alabama.
+
+                The novel revolves around the trial of Tom Robinson, a Black man falsely accused of raping a white woman.
+                Scout's father, Atticus Finch, serves as Tom Robinson's defense attorney, and the trial becomes a
+                focal point for the town's racial tensions and prejudices.
+
+                "To Kill a Mockingbird" is a poignant exploration of injustice and the loss of innocence, as Scout and her
+                brother Jem come to terms with the harsh realities of the adult world. It is a powerful story that
+                continues to resonate with readers and is considered a classic of American literature.</p>
+        </section>
+
+        <!-- Секция "Автор" -->
+        <section id="author" class="mt-5">
+            <h1 class="display-4">About the Author</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Добавление ссылки на изображение автора -->
+                    <a href="https://en.wikipedia.org/wiki/Harper_Lee" target="_blank">
+                        <img src="../../img/Harper.jpg" alt="Harper Lee" class="img-fluid rounded square">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <p class="lead">Harper Lee was an American novelist best known for her groundbreaking work, "To Kill a
+                        Mockingbird." She was born in Monroeville, Alabama, in 1926.</p>
+                    <p>Lee's debut novel, "To Kill a Mockingbird," won the Pulitzer Prize for Fiction in 1961 and became an
+                        instant classic. Her storytelling addressed complex social issues and is celebrated for its
+                        portrayal of moral growth and the loss of innocence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Содержание" -->
+        <section id="contents" class="mt-5">
+            <h1 class="display-4">Table of Contents</h1>
+            <p>"To Kill a Mockingbird" is divided into parts that chronicle Scout Finch's experiences and observations in
+                Maycomb. While the book doesn't have traditional numbered chapters, here are some key sections:</p>
+            <ul>
+                <li>Part One: Scout's Childhood</li>
+                <li>Part Two: The Tom Robinson Trial</li>
+                <li>Part Three: Boo Radley</li>
+            </ul>
+            <p>The novel's structure reflects Scout's coming-of-age journey and her evolving understanding of the
+                complexities of the adult world.</p>
+        </section>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

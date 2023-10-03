@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Book Review Blog</title>
+	<link rel="icon" href="../../img/book.png">
+	<!-- Подключаем стили Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Подключаем скрипты Bootstrap JavaScript, включая Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../css/mainPage.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Phudu:wght@700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+</head>
+
+<header class="header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+			<div class="header_inner">
+				<!-- Заголовок сайта -->
+				<a class="navbar-brand mx-4" href="../mainPage.html">
+					<h2 class="header_inner_title">Book Review Blog</h2>
+				</a>
+				<!-- Кнопка для мобильных устройств -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse ml-auto" id="navbarNav">
+					<!-- Навигационное меню -->
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#overview">Overview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#author">Author</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contents">Contents</a>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Dropdown link
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="../mainPage.html">Main page</a></li>
+						<li><a class="dropdown-item" href="../listOfBooks.html">Book reviews</a></li>
+						<li><a class="dropdown-item" href="../aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<!-- Главный контейнер -->
+	<div class="container mt-5">
+		<!-- Секция "Обзор" -->
+		<section id="overview">
+			<h1 class="display-4">1984</h1>
+			<p class="lead">"1984" by George Orwell is a dystopian novel that explores themes of totalitarianism,
+				surveillance,
+				and the erosion of individual freedoms. The story is set in a bleak and oppressive society where the
+				government, led by the Party and its enigmatic leader Big Brother, exercises complete control over
+				every aspect of people's lives.
+
+				The novel follows the life of Winston Smith, a low-ranking Party member who becomes disillusioned with the
+				regime's propaganda and seeks to rebel against the oppressive regime. Winston's journey leads him to
+				Julia, a fellow rebel, and together they embark on a dangerous quest for truth and freedom.
+
+				"1984" is a chilling and thought-provoking work that serves as a warning about the dangers of authoritarianism
+				and the manipulation of information. It remains a classic of dystopian literature and a powerful
+				commentary on the nature of power and resistance.</p>
+		</section>
+
+		<!-- Секция "Автор" -->
+		<section id="author" class="mt-5">
+			<h1 class="display-4">About the Author</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<!-- Добавление ссылки на изображение автора -->
+					<a href="https://en.wikipedia.org/wiki/George_Orwell" target="_blank">
+						<img src="../../img/George.jpg" alt="George Orwell" class="img-fluid rounded square">
+					</a>
+				</div>
+				<div class="col-md-8">
+					<p class="lead">George Orwell was an English novelist, essayist, and journalist known for his
+						social and political commentary. He was born in 1903 and is widely regarded as one of the
+						most influential writers of the 20th century.</p>
+					<p>Orwell's works often address themes of totalitarianism, propaganda, and the impact of
+						oppressive regimes on individuals. His writing style is marked by clarity and a commitment
+						to truth and justice.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Секция "Содержание" -->
+		<section id="contents" class="mt-5">
+			<h1 class="display-4">Table of Contents</h1>
+			<p>"1984" is divided into parts and chapters that follow Winston Smith's experiences and his resistance
+				against the Party. Here are some key parts and chapters:</p>
+			<ul>
+				<li>Part One: The Theory and Practice of Oligarchical Collectivism
+					<ul>
+						<li>Chapter 1: The Party</li>
+						<li>Chapter 3: War is Peace, Freedom is Slavery, Ignorance is Strength</li>
+					</ul>
+				</li>
+				<li>Part Two: The Proles</li>
+				<li>Part Three: Winston's Rebellion</li>
+				<li>Part Three: The Ministry of Love</li>
+			</ul>
+			<p>The novel's structure reflects Winston's gradual awakening and resistance against the oppressive regime.</p>
+		</section>
+	</div>
+
+	<!-- Подключение скриптов Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
