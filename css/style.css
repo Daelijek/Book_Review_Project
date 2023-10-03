@@ -169,7 +169,6 @@ a {
 	padding: 10px;
 	cursor: pointer;
 }
-
 .footer-form input::placeholder,
 .footer-form textarea::placeholder {
 	color:#718db2;
