@@ -25,7 +25,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
 				<div class="header_inner">
 					<!-- Заголовок сайта -->
-					<a class="navbar-brand mx-4" href="mainPage.html">
+					<a class="navbar-brand" href="mainPage.html">
 						<h2 class="header_inner_title">Book Review Blog</h2>
 					</a>
 					<!-- Кнопка для мобильных устройств -->
@@ -40,23 +40,23 @@
 								<a class="nav-link" href="#intro">Introduction</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#story">Our Story</a>
+								<a class="nav-link" href="#story">Story</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#goal">Our Goal</a>
+								<a class="nav-link" href="#goal">Goals</a>
 							</li>
 						</ul>
-					</div>
-					<div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Actions <span class="badge bg-secondary">3</span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<li><a class="dropdown-item" href="mainPage.html">Main Page</a></li>
-							<li><a class="dropdown-item" href="listOfBooks.html">Book Reviews</a></li>
-							<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
-						</ul>
+						<div class="dropdown">
+							<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Actions <span class="badge bg-secondary">3</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<li><a class="dropdown-item" href="mainPage.html">Main Page</a></li>
+								<li><a class="dropdown-item" href="listOfBooks.html">Book Reviews</a></li>
+								<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -196,40 +196,44 @@
 		</div>
 	</section>
 
-
 	<footer class="footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="footer-form">
-						<div class="footer_title">
-							Quick Contact
+				<div class="row">
+						<div class="col-md-6">
+								<div class="footer-form">
+										<div class="footer_title">
+												Quick Contact
+										</div>
+										<form action="#" class="footer-form" id="contactForm">
+												<div class="form-group">
+														<input type="text" class="form-control" placeholder="Name" id="name">
+														<div class="error-message" id="nameError"></div>
+												</div>
+												<div class="form-group">
+														<input type="email" class="form-control" placeholder="Email Address" id="email">
+														<div class="error-message" id="emailError"></div>
+												</div>
+												<div class="form-group">
+														<input type="text" class="form-control" placeholder="Subject" id="subject">
+														<div class="error-message" id="subjectError"></div>
+												</div>
+												<div class="form-group">
+														<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
+														<div class="error-message" id="messageError"></div>
+												</div>
+												<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
+										</form>
+								</div>
 						</div>
-						<form action="" class="footer-form">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Name">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Email Address">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Subject">
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" cols="21" rows="8" placeholder="Message"></textarea>
-							</div>
-							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
-						</form>
-					</div>
 				</div>
-			</div>
 		</div>
-	</footer>
+</footer>
 
 	<!-- Bootstrap Toast Notification -->
 	<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
 		<div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 			<div class="toast-header">
+				<img src="../img/book.png" class="img-fluid" alt="" style="max-width: 25px;">
 				<strong class="me-auto">Success</strong>
 				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 			</div>
@@ -239,7 +243,7 @@
 		</div>
 	</div>
 
-	<script>
+	<script src="../js/mainPage.js">
 		// JavaScript to show the toast when the "SEND" button is clicked
 		document.getElementById('sendButton').addEventListener('click', function () {
 			var successToast = new bootstrap.Toast(document.getElementById('successToast'));
