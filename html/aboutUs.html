@@ -24,7 +24,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
 			<div class="header_inner">
 				<!-- Заголовок сайта -->
-				<a class="navbar-brand mx-4" href="mainPage.html">
+				<a class="navbar-brand" href="mainPage.html">
 					<h2 class="header_inner_title">Book Review Blog</h2>
 				</a>
 				<!-- Кнопка для мобильных устройств -->
@@ -45,17 +45,17 @@
 							<a class="nav-link" href="#plans">Future Plans</a>
 						</li>
 					</ul>
-				</div>
-				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-						data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Actions <span class="badge bg-secondary">3</span>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<li><a class="dropdown-item" href="mainPage.html">Main Page</a></li>
-						<li><a class="dropdown-item" href="listOfBooks.html">Book Reviews</a></li>
-						<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
-					</ul>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Actions <span class="badge bg-secondary">3</span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="mainPage.html">Main Page</a></li>
+							<li><a class="dropdown-item" href="listOfBooks.html">Book Reviews</a></li>
+							<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -68,18 +68,19 @@
 			<div class="row">
 				<div class="col-md-7">
 					<article class="book_info" id="mission">
-						<h2>Our Mission</h2>
-						<p class="book_info_text4">
-							We are a community of passionate book lovers united by a common goal - to share our inspiration and
-							knowledge about the world of literature. Our mission is to make reading more engaging and accessible for
-							everyone. We believe in the magic of words and their power to transform our lives.
-
-						<h2>Who We Are</h2>
-						<p class="book_info_text4">
-							We are a group of individuals for whom books are not merely words on pages but a source of inspiration,
-							pleasure, and enrichment. Our reviews, critiques, and articles are crafted with a deep love for literature
-							and a desire to share that love with the world. We are diverse in our interests but bound together by a
-							shared passion for words.
+						<div class="tab">
+							<button class="tablinks" onclick="openCity(event, 'ourMission')">Our Mission</button>
+							<button class="tablinks" onclick="openCity(event, 'WhoWeAre')">Who We Are</button>
+						</div>
+						<div id="ourMission" class="tabcontent">
+							<h2>Our Mission</h2>
+							<p class="book_info_text4">We are a tightly-knit community of fervent book enthusiasts, brought together by a shared and resolute objective: to propagate our wellspring of inspiration and our vast knowledge about the world of literature. Our mission is a dedicated pursuit to render the act of reading more compelling and within reach for all. We wholeheartedly believe in the enchantment of words and their extraordinary capacity to metamorphose our lives.</p>
+						</div>
+						
+						<div id="WhoWeAre" class="tabcontent">
+							<h3>Who We Are</h3>
+							<p class="book_info_text4">We are a diverse group of individuals who consider books to be far more than just words on pages; they are a boundless source of inspiration, pure pleasure, and profound enrichment in our lives. Our reviews, critiques, and articles are meticulously crafted with an unwavering love for literature, and an unwavering desire to share that love with the world. Although we possess a wide range of interests, we are united by a shared and fervent passion for the written word.</p>
+						</div>
 					</article>
 				</div>
 			</div>
@@ -91,19 +92,19 @@
 			<div class="row">
 				<div class="col-md-7">
 					<article class="book_info" id="readers">
-						<h2>Our Readers</h2>
-						<p class="book_info_text2">
-							Our readers are like-minded individuals who appreciate the magic of words and storytelling. They explore
-							various genres and authors, seeking inspiration and new perspectives. We take pride in fostering a
-							community of readers where everyone can find something that resonates with them. Our goal is to help them
-							discover new worlds through literature.
-
-						<h2>About the Project</h2>
-						<p class="book_info_text2">
-							"Book Review Blog" is our platform for discussing and analyzing literature. We offer reviews covering a
-							wide range of books, from classics to contemporary bestsellers. We dissect plots, analyze characters, and
-							explore themes to assist you in choosing your next reading adventure. Our aim is to share our thoughts and
-							inspiration, empowering you to make more informed reading choices.
+						<div class="tab">
+							<button class="tablinks" onclick="openCity(event, 'ourReaders')">Our Readers</button>
+							<button class="tablinks" onclick="openCity(event, 'aboutTheProject')">About the Project</button>
+						</div>
+						<div id="ourReaders" class="tabcontent">
+							<h2>Our Readers</h2>
+							<p class="book_info_text4">Our readers are kindred spirits who deeply appreciate the enchantment of words and the art of storytelling. They eagerly traverse diverse genres and traverse the imaginative realms created by various authors, all in their quest for inspiration and fresh perspectives. We take immense pride in nurturing a vibrant community of readers where each individual can uncover something that profoundly resonates with their own unique journey. Our ultimate objective is to guide them towards the discovery of new worlds through the transformative power of literature.</p>
+						</div>
+						
+						<div id="aboutTheProject" class="tabcontent">
+							<h3>About The Project</h3>
+							<p class="book_info_text4">"Book Review Blog" stands as our dedicated platform for the exploration and dissection of the literary world. We endeavor to provide comprehensive reviews that span an extensive spectrum of literary works, from timeless classics to the latest contemporary bestsellers. Delving deep into the intricacies of plots, conducting profound character analyses, and navigating the rich tapestry of themes, our purpose is to aid you in the selection of your next literary voyage. Our mission revolves around the sharing of our insights and inspirations, thereby empowering you to make well-informed choices on your literary endeavors.</p>
+						</div>
 					</article>
 				</div>
 			</div>
@@ -115,18 +116,19 @@
 			<div class="row">
 				<div class="col-md-7">
 					<article class="book_info" id="plans">
-						<h2>Our Future Plans</h2>
-						<p class="book_info_text3">
-							We aspire to expand and enhance our project, making it even more engaging and valuable for you. In the
-							future, we plan to diversify our range of reviews, provide more content, and create a space for exchanging
-							opinions with our readers. Our goal is to continue inspiring you and assisting you in finding your next
-							captivating book.
-
-						<h2>Our Authors</h2>
-						<p class="book_info_text3">
-							Our authors are book enthusiasts and experts in various genres. They share their knowledge and passion for
-							literature through their reviews and articles. Their mission is to help you uncover new worlds and
-							experience unforgettable literary journeys. We are proud of our team, which makes this project possible.
+						<div class="tab">
+							<button class="tablinks" onclick="openCity(event, 'futurePlans')">Our Future Plans</button>
+							<button class="tablinks" onclick="openCity(event, 'ourAuthors')">Our Authors</button>
+						</div>
+						<div id="futurePlans" class="tabcontent">
+							<h2>Our Future Plans</h2>
+							<p class="book_info_text4">Our vision extends to the perpetual evolution and enrichment of our project, with a steadfast commitment to making it even more captivating and beneficial for you, our valued readers. As we cast our gaze into the future, our strategic goals encompass the diversification of our review portfolio, the provision of an even more extensive repository of content, and the creation of a dynamic space for the exchange of thoughts and opinions with our cherished readers. Our unwavering objective is to persist in inspiring you and to remain your unwavering compass in the journey of discovering the next enthralling literary masterpiece.</p>
+						</div>
+						
+						<div id="ourAuthors" class="tabcontent">
+							<h3>Our Authors</h3>
+							<p class="book_info_text4">At the heart of our literary endeavor lies a roster of distinguished authors, each one a passionate bibliophile and an expert in their respective genres. They channel their wealth of knowledge and fervor for literature into the fabric of their reviews and articles, acting as the guiding torchbearers on your path to unearthing fresh realms and embarking on unforgettable literary odysseys. We take immense pride in our exceptional team, for it is their unwavering dedication and expertise that breathe life into this project and make it all possible.</p>
+						</div>
 					</article>
 				</div>
 			</div>
@@ -139,7 +141,9 @@
 				<div class="col-md-7">
 					<article class="book_info" id="">
 						<p class="book_info_text">
-							Thank you for sharing this exciting journey in the world of books with us. We hope that "Book Review Blog" becomes your trusted guide in the realm of literature and a source of inspiration for your literary adventures.
+							Thank you for sharing this exciting journey in the world of books with us. We hope that "Book Review Blog"
+							becomes your trusted guide in the realm of literature and a source of inspiration for your literary
+							adventures.
 						</p>
 					</article>
 				</div>
@@ -156,18 +160,22 @@
 					<div class="footer_title">
 						Quick Contact
 					</div>
-					<form action="" class="footer-form">
+					<form action="#" class="footer-form" id="contactForm">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Name">
+							<input type="text" class="form-control" placeholder="Name" id="name">
+							<div class="error-message" id="nameError"></div>
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email Address">
+							<input type="email" class="form-control" placeholder="Email Address" id="email">
+							<div class="error-message" id="emailError"></div>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Subject">
+							<input type="text" class="form-control" placeholder="Subject" id="subject">
+							<div class="error-message" id="subjectError"></div>
 						</div>
 						<div class="form-group">
-							<textarea class="form-control" cols="21" rows="8" placeholder="Message"></textarea>
+							<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
+							<div class="error-message" id="messageError"></div>
 						</div>
 						<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
 					</form>
@@ -175,7 +183,15 @@
 			</div>
 		</div>
 	</div>
+	<div id="feedbackContainer"></div>
+	<form id="feedbackForm" class="feedbackForm">
+		<label for="userFeedback" class="userFeedback">Leave your feedback: </label>
+		<input type="text" id="userFeedback" name="userFeedback" placeholder="Enter your feedback here">
+		<button type="submit">Submit</button>
+	</form>
+	<ul id="feedbackList"></ul>
 </footer>
+
 
 <!-- Bootstrap Toast Notification -->
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
@@ -190,40 +206,12 @@
 	</div>
 </div>
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/aboutUs.js">
 	// JavaScript to show the toast when the "SEND" button is clicked
 	document.getElementById('sendButton').addEventListener('click', function () {
 		var successToast = new bootstrap.Toast(document.getElementById('successToast'));
 		successToast.show();
 	});
 </script>
-
-<!-- Конечно, вот текст раздела "О Нас", описывающий ваш проект "Book Review Blog":
-
-Наша Миссия
-
-Мы - это сообщество страстных книголюбов, объединенных общей целью - делиться нашим вдохновением и знанием о мире литературы. Наша миссия - сделать чтение более увлекательным и доступным для всех.
-
-Кто Мы
-
-Мы - группа людей, для которых книги - это не просто слова на страницах, но источник вдохновения, удовольствия и обогащения. Наши рецензии, обзоры и статьи созданы с любовью к литературе и стремлением поделиться этой любовью с миром.
-
-Наши Читатели
-
-Наши читатели - это единомышленники, ценящие магию слов и сюжетов. Они исследуют разные жанры и авторов, ищут вдохновение и новые перспективы. Мы гордимся поддерживать сообщество читателей, где каждый может найти что-то для себя.
-
-О Проекте
-
-"Book Review Blog" - это наше пространство для обсуждения и анализа литературы. Мы предлагаем обзоры на широкий спектр книг - от классики до современных бестселлеров. Мы разбираем сюжеты, анализируем персонажей и исследуем темы, чтобы помочь вам выбрать следующую книгу для чтения.
-
-Наши Авторы
-
-Наши авторы - это книголюбы и эксперты в различных жанрах. Они делятся своими знаниями и страстью к литературе через свои обзоры и статьи. Их цель - помочь вам открыть новые миры и пережить незабываемые литературные приключения.
-
-Наши Планы На Будущее
-
-Мы стремимся развивать наш проект и делать его еще более интересным и полезным для вас. В будущем, мы планируем расширить ассортимент обзоров, предоставить больше контента и создать пространство для обмена мнениями с нашими читателями.
-
-Спасибо, что делитесь с нами этой увлекательной путешествие в мире книг. Мы надеемся, что "Book Review Blog" станет вашим надежным путеводителем в мире литературы.
-
-Пожалуйста, используйте этот текст по вашему усмотрению на вашей веб-странице. -->
