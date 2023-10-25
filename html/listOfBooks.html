@@ -24,7 +24,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
 			<div class="header_inner">
 				<!-- Заголовок сайта -->
-				<a class="navbar-brand mx-4" href="mainPage.html">
+				<a class="navbar-brand" href="mainPage.html">
 					<h2 class="header_inner_title">Book Review Blog</h2>
 				</a>
 				<!-- Кнопка для мобильных устройств -->
@@ -45,17 +45,47 @@
 							<a class="nav-link" href="#literary">Literary</a>
 						</li>
 					</ul>
-				</div>
-				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-						data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Actions <span class="badge bg-secondary">3</span>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<li><a class="dropdown-item" href="mainPage.html">Main Page</a></li>
-						<li><a class="dropdown-item" href="listOfBooks.html">Book Reviews</a></li>
-						<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
+
+					<ul>
+						<li>
+
+							<button id="myBtn" class="openList">Open List</button>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+
+									<div class="modal-body">
+										<div class="containerList">
+											<div class="todo-app">
+												<h2>To-Do List <img src="../img/to-do-list.png" alt=""></h2>
+												<div class="row-container">
+													<input type="text" id="input-box" placeholder="Add your task!" class="inputList">
+													<button class="buttonList" onclick="addTask()">Add</button>
+												</div>
+												<ul id="list-container" class="listContainer">
+													<!-- <li class="checked">Task 1</li>
+													<li>Task 2</li>
+													<li>Task 3</li> -->
+												</ul>
+											</div>
+										</div>
+									</div>
+
+						</li>
 					</ul>
+
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Actions <span class="badge bg-secondary">3</span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="mainPage.html">Main Page</a></li>
+							<li><a class="dropdown-item" href="listOfBooks.html">Book Reviews</a></li>
+							<li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
+						</ul>
+					</div>
+
 				</div>
 			</div>
 		</nav>
@@ -63,6 +93,13 @@
 </header>
 
 <body>
+	<div class="timer-container">
+		<label for="duration">Set timer duration (seconds):</label>
+		<input type="number" id="duration" value="60">
+	</div>
+	<div class="timer" id="timer">60</div>
+	<button id="startButton" class="timerButton">Start</button>
+	<button id="stopButton" class="timerButton">Stop</button>
 
 	<section class="book_review3">
 		<div class="container">
@@ -237,7 +274,6 @@
 		</div>
 	</section>
 
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -246,18 +282,22 @@
 						<div class="footer_title">
 							Quick Contact
 						</div>
-						<form action="" class="footer-form">
+						<form action="#" class="footer-form" id="contactForm">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Name">
+								<input type="text" class="form-control" placeholder="Name" id="name">
+								<div class="error-message" id="nameError"></div>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Email Address">
+								<input type="email" class="form-control" placeholder="Email Address" id="email">
+								<div class="error-message" id="emailError"></div>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Subject">
+								<input type="text" class="form-control" placeholder="Subject" id="subject">
+								<div class="error-message" id="subjectError"></div>
 							</div>
 							<div class="form-group">
-								<textarea class="form-control" cols="21" rows="8" placeholder="Message"></textarea>
+								<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
+								<div class="error-message" id="messageError"></div>
 							</div>
 							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
 						</form>
@@ -266,7 +306,6 @@
 			</div>
 		</div>
 	</footer>
-
 	<!-- Bootstrap Toast Notification -->
 	<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
 		<div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -280,7 +319,7 @@
 		</div>
 	</div>
 
-	<script>
+	<script src="../js/listOfBooks.js">
 		// JavaScript to show the toast when the "SEND" button is clicked
 		document.getElementById('sendButton').addEventListener('click', function () {
 			var successToast = new bootstrap.Toast(document.getElementById('successToast'));
@@ -288,41 +327,3 @@
 		});
 	</script>
 </body>
-<!-- Literary Books:
-
-	"To Kill a Mockingbird" by Harper Lee - This is a classic book about racism and social injustice in the American
-	South.
-
-	"Pride and Prejudice" by Jane Austen - This novel explores the themes of social status and romantic relationships in
-	19th-century English society.
-
-	"The Great Gatsby" by F. Scott Fitzgerald - This novel depicts the lives and disillusionments of America's golden
-	youth in the 1920s.
-
-	"1984" by George Orwell - This book is a dystopian tale about a totalitarian society and the loss of personal freedom.
-
-	Fantastic books:
-
-	"Dune" by Frank Herbert - This is a classic science fiction saga that explores politics, religion, and culture on the
-	desert planet Arrakis.
-
-	"Neuromancer" by William Gibson - This novel is considered one of the founding works of cyberpunk and tells the story
-	of hacker Case and the world of virtual reality.
-
-	"The Left Hand of Darkness" by Ursula K. Le Guin - This book explores issues of gender identity and social structures
-	on an alien planet.
-
-	"Foundation" by Isaac Asimov - This series of books describes the rise and fall of an empire in the distant future and
-	includes many scientific and political aspects.
-
-	Programming Books:
-
-	"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin - This book will teach you to write
-	cleaner and more maintainable code.
-
-	"Introduction to the Theory of Computation" by Michael Sipser - It provides a deep understanding of the theory of
-	computation and algorithms
-
-	"Introduction to Algorithms, 3rd Edition" - An essential textbook for learning algorithms and data structures.
-
-	"Grokking Algorithms" - A beginner-friendly book that explains complex algorithms using simple language and examples. -->
