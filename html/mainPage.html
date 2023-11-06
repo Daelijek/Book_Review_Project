@@ -162,6 +162,7 @@
 								possibilities for your next literary adventure. Our mission is to guide you on
 								that adventure and make your reading experience even more enjoyable.
 							</p>
+						</article>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -198,60 +199,37 @@
 
 	<footer class="footer">
 		<div class="container">
-				<div class="row">
-						<div class="col-md-6">
-								<div class="footer-form">
-										<div class="footer_title">
-												Quick Contact
-										</div>
-										<form action="#" class="footer-form" id="contactForm">
-												<div class="form-group">
-														<input type="text" class="form-control" placeholder="Name" id="name">
-														<div class="error-message" id="nameError"></div>
-												</div>
-												<div class="form-group">
-														<input type="email" class="form-control" placeholder="Email Address" id="email">
-														<div class="error-message" id="emailError"></div>
-												</div>
-												<div class="form-group">
-														<input type="text" class="form-control" placeholder="Subject" id="subject">
-														<div class="error-message" id="subjectError"></div>
-												</div>
-												<div class="form-group">
-														<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
-														<div class="error-message" id="messageError"></div>
-												</div>
-												<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
-										</form>
-								</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="footer-form">
+						<div class="footer_title">
+							Quick Contact
 						</div>
+						<form action="#" class="footer-form" id="contactForm">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name" id="name">
+								<div class="error-message" id="nameError"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Email Address" id="email">
+								<div class="error-message" id="emailError"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Subject" id="subject">
+								<div class="error-message" id="subjectError"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
+								<div class="error-message" id="messageError"></div>
+							</div>
+							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
+						</form>
+					</div>
 				</div>
-		</div>
-</footer>
-
-	<!-- Bootstrap Toast Notification -->
-	<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-		<div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="toast-header">
-				<img src="../img/book.png" class="img-fluid" alt="" style="max-width: 25px;">
-				<strong class="me-auto">Success</strong>
-				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-			</div>
-			<div class="toast-body">
-				You have successfully sent the message. Our technical team will contact you soon. Support.
 			</div>
 		</div>
-	</div>
-
-	<script src="../js/mainPage.js">
-		// JavaScript to show the toast when the "SEND" button is clicked
-		document.getElementById('sendButton').addEventListener('click', function () {
-			var successToast = new bootstrap.Toast(document.getElementById('successToast'));
-			successToast.show();
-		});
-	</script>
-
-
+	</footer>
+	<script src="../js/mainPage.js"></script>
 </body>
 
 </html>
