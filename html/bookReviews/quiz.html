@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Book Review Blog</title>
+	<link rel="icon" href="../../img/book.png">
+	<!-- Подключаем стили Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Подключаем скрипты Bootstrap JavaScript, включая Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../css/mainPage.css">
+	<link rel="stylesheet" href="quiz.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Phudu:wght@700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+</head>
+
+<header class="header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+			<div class="header_inner">
+				<!-- Заголовок сайта -->
+				<a class="navbar-brand mx-4" href="../mainPage.html">
+					<h2 class="header_inner_title">Book Review Blog</h2>
+				</a>
+				<!-- Кнопка для мобильных устройств -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="dropdown">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Actions
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="../mainPage.html">Main page</a></li>
+						<li><a class="dropdown-item" href="../listOfBooks.html">Book reviews</a></li>
+						<li><a class="dropdown-item" href="../aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<div class="quiz-container">
+		<h2>Book Genre Quiz</h2>
+		<div id="quiz">
+			<div class="question">
+				<h2><span id="bookTitle">Book Title</span></h2>
+				<div class="options">
+					<div class="option" draggable="true" ondragstart="drag(event)">Programming Books</div>
+					<div class="option" draggable="true" ondragstart="drag(event)">Fantastic Books</div>
+					<div class="option" draggable="true" ondragstart="drag(event)">Literary Books</div>
+				</div>
+			</div>
+			<div class="drop-target" ondragover="allowDrop(event)" ondrop="drop(event)">
+				Drag the genre to this box.
+			</div>
+		</div>
+	</div>
+	
+	<script src="quiz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
