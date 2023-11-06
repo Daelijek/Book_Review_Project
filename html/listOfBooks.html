@@ -48,7 +48,6 @@
 
 					<ul>
 						<li>
-
 							<button id="myBtn" class="openList">Open List</button>
 							<div id="myModal" class="modal">
 								<div class="modal-content">
@@ -70,7 +69,6 @@
 											</div>
 										</div>
 									</div>
-
 						</li>
 					</ul>
 
@@ -93,14 +91,6 @@
 </header>
 
 <body>
-	<div class="timer-container">
-		<label for="duration">Set timer duration (seconds):</label>
-		<input type="number" id="duration" value="60">
-	</div>
-	<div class="timer" id="timer">60</div>
-	<button id="startButton" class="timerButton">Start</button>
-	<button id="stopButton" class="timerButton">Stop</button>
-
 	<section class="book_review3">
 		<div class="container">
 			<div class="row">
@@ -109,11 +99,13 @@
 				</div>
 
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/Bhargava-Algorithms_hires.png" class="card-img-top" alt="Grokking Algorithms">
 						<div class="card-body">
 							<h3 class="card-title">Grokking Algorithms</h3>
-							<p class="card-text">A beginner-friendly book that explains complex algorithms using simple language and
+							<p class="card-text description" style="display: none;">A beginner-friendly book that explains complex
+								algorithms using simple
+								language and
 								examples.</p>
 							<a href="bookReviews/GrokkingAlgo.html" class="btn btn-primary">Read More</a>
 						</div>
@@ -121,34 +113,38 @@
 				</div>
 
 				<div class="col-md-3">
-					<div class="card">
-						<img src="../img/Corner.jpg" class="card-img-top" alt="Introduction to Algorithms, 3rd Edition">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
+						<img src="../img/Corner.jpg" class="card-img-top" alt="Grokking Algorithms">
 						<div class="card-body">
 							<h3 class="card-title">Introduction to Algorithms, 3rd Edition</h3>
-							<p class="card-text">An essential textbook for learning algorithms and data structures.</p>
-							<a href="bookReviews/3rdEdition.html" class="btn btn-primary">Read More</a>
+							<p class="card-text description" style="display: none;">An essential textbook for learning algorithms and
+								data structures.</p>
+							<a href="bookReviews/GrokkingAlgo.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/CleanCode.jpg" class="card-img-top" alt="Clean Code">
 						<div class="card-body">
 							<h3 class="card-title">Clean Code</h3>
-							<p class="card-text">A Handbook of Agile Software Craftsmanship" by Robert C. Martin - This book will
-								teach you to write cleaner and more maintainable code.</p>
+							<p class="card-text description" style="display: none;">A Handbook of Agile Software Craftsmanship" by
+								Robert C. Martin - This
+								book will teach you to write cleaner and more maintainable code.</p>
 							<a href="bookReviews/cleanCode.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/computation.jpg" class="card-img-top" alt="Introduction to the Theory of Computation">
 						<div class="card-body">
 							<h3 class="card-title">Introduction to the Theory of Computation</h3>
-							<p class="card-text">It provides a deep understanding of the theory of computation and algorithms</p>
+							<p class="card-text description" style="display: none;">It provides a deep understanding of the theory of
+								computation and
+								algorithms</p>
 							<a href="bookReviews/IntroductionToTheTheoryOfComputation.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
@@ -166,52 +162,60 @@
 				</div>
 
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/Dune.jpg" class="card-img-top" alt="Dune">
 						<div class="card-body">
 							<h3 class="card-title">Dune</h3>
-							<p class="card-text">This is a classic science fiction saga that explores politics, religion, and culture
-								on the desert planet Arrakis.</p>
+							<p class="card-text description" style="display: none;">This is a classic science fiction saga that
+								explores politics, religion,
+								and culture on the desert planet Arrakis.</p>
 							<a href="bookReviews/Dune.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/neuromancer.jpg" class="card-img-top" alt="Neuromancer">
 						<div class="card-body">
 							<h3 class="card-title">Neuromancer</h3>
-							<p class="card-text">This novel is considered one of the founding works of cyberpunk and tells the story
-								of hacker Case and the world of virtual reality.</p>
+							<p class="card-text description" style="display: none;">This novel is considered one of the founding works
+								of cyberpunk and tells
+								the story of hacker Case and the world of virtual reality.</p>
 							<a href="bookReviews/Neuromancer.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/leftHandOfDarkness.jpg" class="card-img-top" alt="The Left Hand of Darkness">
 						<div class="card-body">
 							<h3 class="card-title">The Left Hand of Darkness</h3>
-							<p class="card-text">This book explores issues of gender identity and social structures on an alien
-								planet.</p>
+							<p class="card-text description" style="display: none;">This book explores issues of gender identity and
+								social structures on an
+								alien planet.</p>
 							<a href="bookReviews/TheLeftHandOfDarkness.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/foundation.jpg" class="card-img-top" alt="Foundation">
 						<div class="card-body">
 							<h3 class="card-title">Foundation</h3>
-							<p class="card-text">This series of books describes the rise and fall of an empire in the distant future
-								and includes many scientific and political aspects.</p>
+							<p class="card-text description" style="display: none;">This series of books describes the rise and fall
+								of an empire in the
+								distant future and includes many scientific and political aspects.</p>
 							<a href="bookReviews/Foundation.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -225,51 +229,60 @@
 				</div>
 
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/mockinbird.jpg" class="card-img-top" alt="To Kill a Mockingbird">
-						<div class="card-body">
+						<div class "card-body">
 							<h3 class="card-title">To Kill a Mockingbird</h3>
-							<p class="card-text">This is a classic book about racism and social injustice in the American South.</p>
+							<p class="card-text description" style="display: none;">This is a classic book about racism and social
+								injustice in the American
+								South.</p>
 							<a href="bookReviews/ToKillaMockinbird.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/pride.jpg" class="card-img-top" alt="Pride and Prejudice">
 						<div class="card-body">
 							<h3 class="card-title">Pride and Prejudice</h3>
-							<p class="card-text">This novel explores the themes of social status and romantic relationships in
-								19th-century English society.</p>
+							<p class="card-text description" style="display: none;">This novel explores the themes of social status
+								and romantic
+								relationships in 19th-century English society.</p>
 							<a href="bookReviews/PrideAndPrejudice.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/GreatGatsby.jpg" class="card-img-top" alt="The Great Gatsby">
 						<div class="card-body">
 							<h3 class="card-title">The Great Gatsby</h3>
-							<p class="card-text">This novel depicts the lives and disillusionments of America's golden youth in the
-								1920s.</p>
+							<p class="card-text description" style="display: none;">This novel depicts the lives and disillusionments
+								of America's golden
+								youth in the 1920s.</p>
 							<a href="bookReviews/TheGreatGatsby.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
 						<img src="../img/1984.jpg" class="card-img-top" alt="1984">
 						<div class="card-body">
 							<h3 class="card-title">1984</h3>
-							<p class="card-text">This book is a dystopian tale about a totalitarian society and the loss of personal
-								freedom.</p>
+							<p class="card-text description" style="display: none;">This book is a dystopian tale about a totalitarian
+								society and the loss
+								of personal freedom.</p>
 							<a href="bookReviews/1984.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -306,24 +319,8 @@
 			</div>
 		</div>
 	</footer>
-	<!-- Bootstrap Toast Notification -->
-	<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-		<div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="toast-header">
-				<strong class="me-auto">Success</strong>
-				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-			</div>
-			<div class="toast-body">
-				You have successfully sent the message. Our technical team will contact you soon. Support.
-			</div>
-		</div>
-	</div>
 
 	<script src="../js/listOfBooks.js">
 		// JavaScript to show the toast when the "SEND" button is clicked
-		document.getElementById('sendButton').addEventListener('click', function () {
-			var successToast = new bootstrap.Toast(document.getElementById('successToast'));
-			successToast.show();
-		});
 	</script>
 </body>
