@@ -312,13 +312,22 @@
 								<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
 								<div class="error-message" id="messageError"></div>
 							</div>
-							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
+							<button type="button" class="btn btn-primary" id="sendButton" onclick="playSound()">SEND</button>
+
+							<audio id="sound" src="../sound/sound.mp3"></audio>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		function playSound() {
+			var audio = document.getElementById("sound");
+			audio.play();
+		}
+	</script>
 
 	<script src="../js/listOfBooks.js">
 		// JavaScript to show the toast when the "SEND" button is clicked
