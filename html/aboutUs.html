@@ -44,6 +44,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#plans">Future Plans</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../html/bookReviews/quiz.html">Game</a>
+						</li>
 					</ul>
 					<div class="dropdown">
 						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -68,42 +71,88 @@
 			<div class="row">
 				<div class="col-md-7">
 					<article class="book_info" id="mission">
-						<div class="tab">
-							<button class="tablinks" onclick="openCity(event, 'ourMission')">Our Mission</button>
-							<button class="tablinks" onclick="openCity(event, 'WhoWeAre')">Who We Are</button>
-						</div>
-						<div id="ourMission" class="tabcontent">
-							<h2>Our Mission</h2>
-							<p class="book_info_text4">We are a tightly-knit community of fervent book enthusiasts, brought together by a shared and resolute objective: to propagate our wellspring of inspiration and our vast knowledge about the world of literature. Our mission is a dedicated pursuit to render the act of reading more compelling and within reach for all. We wholeheartedly believe in the enchantment of words and their extraordinary capacity to metamorphose our lives.</p>
-						</div>
-						
-						<div id="WhoWeAre" class="tabcontent">
-							<h3>Who We Are</h3>
-							<p class="book_info_text4">We are a diverse group of individuals who consider books to be far more than just words on pages; they are a boundless source of inspiration, pure pleasure, and profound enrichment in our lives. Our reviews, critiques, and articles are meticulously crafted with an unwavering love for literature, and an unwavering desire to share that love with the world. Although we possess a wide range of interests, we are united by a shared and fervent passion for the written word.</p>
+						<ul class="nav nav-tabs" id="myTabs1" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="ourMission-tab" data-bs-toggle="tab" href="#ourMission" role="tab"
+									aria-controls="ourMission" aria-selected="true">Our Mission</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="whoWeAre-tab" data-bs-toggle="tab" href="#whoWeAre" role="tab"
+									aria-controls="whoWeAre" aria-selected="false">Who We Are</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent1">
+							<div class="tab-pane fade show active" id="ourMission" role="tabpanel" aria-labelledby="ourMission-tab">
+								<h2>Our Mission</h2>
+								<p class="book_info_text">We are a tightly-knit community of fervent book enthusiasts, brought together
+									by
+									a shared and resolute objective: to propagate our wellspring of inspiration and our vast knowledge
+									about
+									the world of literature. Our mission is a dedicated pursuit to render the act of reading more
+									compelling
+									and within reach for all. We wholeheartedly believe in the enchantment of words and their
+									extraordinary
+									capacity to metamorphose our lives.</p>
+							</div>
+							<div class="tab-pane fade" id="whoWeAre" role="tabpanel" aria-labelledby="whoWeAre-tab">
+								<h3>Who We Are</h3>
+								<p class="book_info_text">We are a diverse group of individuals who consider books to be far more than
+									just words on pages; they are a boundless source of inspiration, pure pleasure, and profound
+									enrichment
+									in our lives. Our reviews, critiques, and articles are meticulously crafted with an unwavering love
+									for
+									literature, and an unwavering desire to share that love with the world. Although we possess a wide
+									range
+									of interests, we are united by a shared and fervent passion for the written word.</p>
+							</div>
 						</div>
 					</article>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 	<section class="book_review2">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
 					<article class="book_info" id="readers">
-						<div class="tab">
-							<button class="tablinks" onclick="openCity(event, 'ourReaders')">Our Readers</button>
-							<button class="tablinks" onclick="openCity(event, 'aboutTheProject')">About the Project</button>
-						</div>
-						<div id="ourReaders" class="tabcontent">
-							<h2>Our Readers</h2>
-							<p class="book_info_text4">Our readers are kindred spirits who deeply appreciate the enchantment of words and the art of storytelling. They eagerly traverse diverse genres and traverse the imaginative realms created by various authors, all in their quest for inspiration and fresh perspectives. We take immense pride in nurturing a vibrant community of readers where each individual can uncover something that profoundly resonates with their own unique journey. Our ultimate objective is to guide them towards the discovery of new worlds through the transformative power of literature.</p>
-						</div>
-						
-						<div id="aboutTheProject" class="tabcontent">
-							<h3>About The Project</h3>
-							<p class="book_info_text4">"Book Review Blog" stands as our dedicated platform for the exploration and dissection of the literary world. We endeavor to provide comprehensive reviews that span an extensive spectrum of literary works, from timeless classics to the latest contemporary bestsellers. Delving deep into the intricacies of plots, conducting profound character analyses, and navigating the rich tapestry of themes, our purpose is to aid you in the selection of your next literary voyage. Our mission revolves around the sharing of our insights and inspirations, thereby empowering you to make well-informed choices on your literary endeavors.</p>
+						<ul class="nav nav-tabs" id="myTabs2" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="ourReaders-tab" data-bs-toggle="tab" href="#ourReaders" role="tab"
+									aria-controls="ourReaders" aria-selected="true">Our Readers</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="aboutTheProject-tab" data-bs-toggle="tab" href="#aboutTheProject" role="tab"
+									aria-controls="aboutTheProject" aria-selected="false">About the Project</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent2">
+							<div class="tab-pane fade show active" id="ourReaders" role="tabpanel" aria-labelledby="ourReaders-tab">
+								<h2>Our Readers</h2>
+								<p class="book_info_text4">Our readers are kindred spirits who deeply appreciate the enchantment of
+									words
+									and the art of storytelling. They eagerly traverse diverse genres and traverse the imaginative realms
+									created by various authors, all in their quest for inspiration and fresh perspectives. We take immense
+									pride in nurturing a vibrant community of readers where each individual can uncover something that
+									profoundly resonates with their own unique journey. Our ultimate objective is to guide them towards
+									the
+									discovery of new worlds through the transformative power of literature.</p>
+							</div>
+							<div class="tab-pane fade" id="aboutTheProject" role="tabpanel" aria-labelledby="aboutTheProject-tab">
+								<h3>About The Project</h3>
+								<p class="book_info_text4">"Book Review Blog" stands as our dedicated platform for the exploration and
+									dissection of the literary world. We endeavor to provide comprehensive reviews that span an extensive
+									spectrum of literary works, from timeless classics to the latest contemporary bestsellers. Delving
+									deep
+									into the intricacies of plots, conducting profound character analyses, and navigating the rich
+									tapestry
+									of themes, our purpose is to aid you in the selection of your next literary voyage. Our mission
+									revolves
+									around the sharing of our insights and inspirations, thereby empowering you to make well-informed
+									choices on your literary endeavors.</p>
+							</div>
 						</div>
 					</article>
 				</div>
@@ -111,23 +160,46 @@
 		</div>
 	</section>
 
+
+
 	<section class="book_review3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
 					<article class="book_info" id="plans">
-						<div class="tab">
-							<button class="tablinks" onclick="openCity(event, 'futurePlans')">Our Future Plans</button>
-							<button class="tablinks" onclick="openCity(event, 'ourAuthors')">Our Authors</button>
-						</div>
-						<div id="futurePlans" class="tabcontent">
-							<h2>Our Future Plans</h2>
-							<p class="book_info_text4">Our vision extends to the perpetual evolution and enrichment of our project, with a steadfast commitment to making it even more captivating and beneficial for you, our valued readers. As we cast our gaze into the future, our strategic goals encompass the diversification of our review portfolio, the provision of an even more extensive repository of content, and the creation of a dynamic space for the exchange of thoughts and opinions with our cherished readers. Our unwavering objective is to persist in inspiring you and to remain your unwavering compass in the journey of discovering the next enthralling literary masterpiece.</p>
-						</div>
-						
-						<div id="ourAuthors" class="tabcontent">
-							<h3>Our Authors</h3>
-							<p class="book_info_text4">At the heart of our literary endeavor lies a roster of distinguished authors, each one a passionate bibliophile and an expert in their respective genres. They channel their wealth of knowledge and fervor for literature into the fabric of their reviews and articles, acting as the guiding torchbearers on your path to unearthing fresh realms and embarking on unforgettable literary odysseys. We take immense pride in our exceptional team, for it is their unwavering dedication and expertise that breathe life into this project and make it all possible.</p>
+						<ul class="nav nav-tabs" id="myTabs3" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="futurePlans-tab" data-bs-toggle="tab" href="#futurePlans" role="tab"
+									aria-controls="futurePlans" aria-selected="true">Our Future Plans</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="ourAuthors-tab" data-bs-toggle="tab" href="#ourAuthors" role="tab"
+									aria-controls="ourAuthors" aria-selected="false">Our Authors</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent3">
+							<div class="tab-pane fade show active" id="futurePlans" role="tabpanel" aria-labelledby="futurePlans-tab">
+								<h2>Our Future Plans</h2>
+								<p class="book_info_text">Our vision extends to the perpetual evolution and enrichment of our project,
+									with a steadfast commitment to making it even more captivating and beneficial for you, our valued
+									readers. As we cast our gaze into the future, our strategic goals encompass the diversification of our
+									review portfolio, the provision of an even more extensive repository of content, and the creation of a
+									dynamic space for the exchange of thoughts and opinions with our cherished readers. Our unwavering
+									objective is to persist in inspiring you and to remain your unwavering compass in the journey of
+									discovering the next enthralling literary masterpiece.</p>
+							</div>
+							<div class="tab-pane fade" id="ourAuthors" role="tabpanel" aria-labelledby="ourAuthors-tab">
+								<h3>Our Authors</h3>
+								<p class="book_info_text">At the heart of our literary endeavor lies a roster of distinguished authors,
+									each one a passionate bibliophile and an expert in their respective genres. They channel their wealth
+									of
+									knowledge and fervor for literature into the fabric of their reviews and articles, acting as the
+									guiding
+									torchbearers on your path to unearthing fresh realms and embarking on unforgettable literary odysseys.
+									We take immense pride in our exceptional team, for it is their unwavering dedication and expertise
+									that
+									breathe life into this project and make it all possible.</p>
+							</div>
 						</div>
 					</article>
 				</div>
@@ -177,12 +249,15 @@
 							<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
 							<div class="error-message" id="messageError"></div>
 						</div>
-						<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
+						<button type="button" class="btn btn-primary" id="sendButton" onclick="playSound()">SEND</button>
+
+						<audio id="sound" src="../sound/sound.mp3"></audio>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div id="feedbackContainer"></div>
 	<form id="feedbackForm" class="feedbackForm">
 		<label for="userFeedback" class="userFeedback">Leave your feedback: </label>
@@ -192,26 +267,13 @@
 	<ul id="feedbackList"></ul>
 </footer>
 
-
-<!-- Bootstrap Toast Notification -->
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-	<div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-		<div class="toast-header">
-			<strong class="me-auto">Success</strong>
-			<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-		</div>
-		<div class="toast-body">
-			You have successfully sent the message. Our technical team will contact you soon. Support.
-		</div>
-	</div>
-</div>
-
+<script>
+	function playSound() {
+		var audio = document.getElementById("sound");
+		audio.play();
+	}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../js/aboutUs.js">
-	// JavaScript to show the toast when the "SEND" button is clicked
-	document.getElementById('sendButton').addEventListener('click', function () {
-		var successToast = new bootstrap.Toast(document.getElementById('successToast'));
-		successToast.show();
-	});
 </script>
